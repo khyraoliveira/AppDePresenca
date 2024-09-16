@@ -46,7 +46,7 @@ async function fetchPresencas() {
     try {
         const response = await fetch('http://127.0.0.1:3000/api/presencas'); // Certifique-se de que a rota da API está correta
         if (!response.ok) {
-            throw new Error('Erro ao buscar plantações');
+            throw new Error('Erro ao buscar presenças');
         }
         const presencas = await response.json();
         const list = document.getElementById('presencas-list');
@@ -61,7 +61,7 @@ async function fetchPresencas() {
             list.appendChild(item);
         });
     } catch (error) {
-        console.error('Erro ao carregar plantações:', error);
+        console.error('Erro ao carregar presenças:', error);
     }
 }
 

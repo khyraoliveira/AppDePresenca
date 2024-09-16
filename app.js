@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 
 // Rotas
-const presencasRoute = require('./routes/presencas');
+const presencasRoute = require('./backend/routes/presencas');
 app.use('/api/presencas', presencasRoute);
 
 // Porta
